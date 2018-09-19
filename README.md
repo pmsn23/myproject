@@ -20,7 +20,7 @@ Core Idea behind this is to try Spark Streaming & inbuilt machine learning along
 
 Learned how to setup the Spark and invoke from Python. However, were not able to extensively use it in this study.
 
-Created a batch Python Program to connect to twitter hose to get live tweets based on key words of our interest. 
+Created a Python Program to connect to twitter hose to get live tweets based on key words of our interest. 
 
 Used Data Science Keywords like '#bigdata, #AI, #datascience, #machinelearning, #ml, #iot
 
