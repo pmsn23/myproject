@@ -27,3 +27,13 @@ Used Data Science Keywords like '#bigdata, #AI, #datascience, #machinelearning, 
 Passed the tweets through Stanford NLP to find the sentiment score and Google Geo Code for Latitude and Longitude.
 
 Created RestPlus API with options to view all tweets, by location, sentiment value
+
+## Case Study 3: Darknet Text mining.
+
+Started on the project idea from Network Security, using the data created by University of AZ Artificial Intelligence Lab. Refer to https://www.azsecure-data.org for more details.
+
+Downloaded the SQL data of Dream Market Product and Seller data, created the tables in mySQL
+
+With Python established connection to mySQL and NLTK to tokenize the contend after removing stop words, special characters.
+
+This is inprogress text mining analysis.. Hope to find something interesting from the data and network security perspective.
