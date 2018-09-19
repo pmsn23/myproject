@@ -28,7 +28,7 @@ Passed the tweets through Stanford NLP to find the sentiment score and Google Ge
 
 Created RestPlus API with options to view all tweets, by location, sentiment value
 
-## Case Study 3: Darknet Text mining.
+## Case Study 3: Darknet Text mining
 
 Started on the project idea from Data & Network Security class, using the data created by University of AZ Artificial Intelligence Lab. Refer to https://www.azsecure-data.org for more details.
 
