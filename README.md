@@ -1,6 +1,6 @@
 # My Projects
 ## Case Study 1: R Shiny Dashboard.
-Have tried to use Shiny Dashboard (SD) with Employee Attrition Exploratory Analysis & Machine Learning. Thanks to Nathan Wall (team member) Dr. John Santire.
+Have tried to use Shiny Dashboard (SD) with Employee Attrition Exploratory Analysis & Machine Learning. Thanks to Nathan Wall (team member) Dr. John Santerre.
 
 We have created Frame work for dynamic scatter plot, bar chart, used the attrition variable as color and shape to differentiate
 
