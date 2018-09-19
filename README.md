@@ -30,7 +30,7 @@ Created RestPlus API with options to view all tweets, by location, sentiment val
 
 ## Case Study 3: Darknet Text mining.
 
-Started on the project idea from Network Security, using the data created by University of AZ Artificial Intelligence Lab. Refer to https://www.azsecure-data.org for more details.
+Started on the project idea from Data & Network Security class, using the data created by University of AZ Artificial Intelligence Lab. Refer to https://www.azsecure-data.org for more details.
 
 Downloaded the SQL data of Dream Market Product and Seller data, created the tables in mySQL
 
