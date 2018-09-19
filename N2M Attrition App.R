@@ -17,7 +17,7 @@ require(caret)
 
 
 #read the data in
-URL <- 'https://raw.githubusercontent.com/nateewall/DDSAnalytics_Churn/master/CustomerAttritionData.csv'
+URL <- 'https://raw.githubusercontent.com/pmsn23/myproject/master/CustomerAttritionData.csv'
 df<-read.csv(text=getURL(URL), header=TRUE) 
 #remove id and duplicated variables
 df <- df[,-c(9,10,22,27)]
