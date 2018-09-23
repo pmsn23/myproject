@@ -37,3 +37,9 @@ Downloaded the SQL data of Dream Market Product and Seller data, created the tab
 With Python established connection to mySQL and NLTK to tokenize the contend after removing stop words, special characters.
 
 This is inprogress text mining analysis.. Hope to find something interesting from the data and network security perspective.
+
+## Case Study 4: Interactive Explorer of WindMill Data
+
+Got couple of Wind Mill Power Generation Data, was performing Exploratory Data Analysis in iPython NoteBook. Like R Shiny in case study1, I explored Bokeh for this exercise. I was Inspired by the Bokeh Movie Explorer and Shiny Movie Explorer, created this application.
+
+Loaded the data into mySQL, created drop down for the two sites, slider for year, month and drop down for x-axis and y-axis. I was able to confirm my findings visually with variations in month/year.
