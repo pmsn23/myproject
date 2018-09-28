@@ -50,5 +50,5 @@ bokeh serve --show WindMill.py --allow-websocket-origin=99.999.999.999:8080
 
 ## Case Study 5: Telephone Bank Marketing for Term Deposit
 
-This dataset was obtained from UCI repository, it has 41188 records with 21 attributes of customer & call details. Objective of this study is to predict if the customer would sign in for term deposit. Cleaning up the data, had to apply PCA, logit and SVM and predict. This dataset is biased towards 'no' to term-deposit. Had to explore different techniques to see which one gets the best results.
+This dataset was obtained from UCI repository, it has 41188 records with 21 attributes of Portuguese Banking Customer, Campaign and call details. Objective of this study is to predict if the customer would sign in for term deposit. Cleaning up the data, had to apply PCA, logit and SVM and predict. This dataset is biased towards 'no' to term-deposit. Had to explore different techniques to see which one gets the best results.
 
