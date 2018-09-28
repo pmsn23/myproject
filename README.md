@@ -43,3 +43,12 @@ This is inprogress text mining analysis.. Hope to find something interesting fro
 Got couple of Wind Mill Power Generation Data, was performing Exploratory Data Analysis in iPython NoteBook. Like R Shiny in case study1, I explored Bokeh for this exercise. I was Inspired by the Bokeh Movie Explorer and Shiny Movie Explorer, created this application.
 
 Loaded the data into mySQL, created drop down for the two sites, slider for year, month and drop down for x-axis and y-axis. I was able to confirm my findings visually with variations in month/year.
+
+Was able to take advantage of the server option with NATIN to map global static IP to the port 8080 and share the interactive chart.
+
+bokeh serve --show WindMill.py --allow-websocket-origin=99.999.999.999:8080
+
+## Case Study 5: Telephone Bank Marketing for Term Deposit
+
+This dataset was obtained from UCI repository, it has 41188 records with 21 attributes of customer & call details. Objective of this study is to predict if the customer would sign in for term deposit. Cleaning up the data, had to apply PCA, logit and SVM and predict. This dataset is biased towards 'no' to term-deposit. Had to explore different techniques to see which one gets the best results.
+
