@@ -1,6 +1,3 @@
-# SQL Code reference:  http://zetcode.com/databases/mysqlpythontutorial/
-# Tokenize Code reference: https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72
-
 import sys
 import _mysql
 import MySQLdb as mdb
@@ -8,6 +5,8 @@ import re
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 import nltk
+from textblob import TextBlob
+import csv
 #nltk.download('stopwords')
 
 
@@ -31,13 +30,19 @@ def retrieve_onebyone():
         cur.execute(sql)
 
         numrows = int(cur.rowcount)
-        
+        WordList=[]
         for i in range(numrows):
             row = cur.fetchone()
             text = remove_special_characters(str(row),remove_digits=True)
             token = remove_stopwords(text)
+            textblob = TextBlob(token).words
+            WordList.append(textblob)
             print (i)
-
+        
+    with open("output.csv",'w') as resultFile:
+        wr = csv.writer(resultFile, dialect='excel')
+        wr.writerows(WordList)
+    
 def remove_special_characters(text, remove_digits=False):
     pattern = r'[^a-zA-z0-9\s]' if not remove_digits else r'[^a-zA-z\s]'
     text = re.sub(pattern, '', text)
