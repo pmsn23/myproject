@@ -1,24 +1,12 @@
 setwd("~/Desktop/WindMill")
 require(readxl) 
-require("plotly")
 require("tswge")
-df<-read_excel("BogamPowerData.xlsx", sheet = 1)
-names(df)[1]<-"Date"
-names(df)[8]<-"kwh_day"
-names(df)[9]<-"kwh_mtd"
-names(df)[10]<-"kwh_ytd"
-names(df)[11]<-"plf_day"
-names(df)[12]<-"plf_mtd"
-names(df)[13]<-"plf_ytd"
+require(xts)
+df<-read_excel("Location-1PowerData-Mnthly.xlsx", sheet=1)
+df$Gen_Date<-as.Date(df$Gen_Date)
 
-ggplot(data = df, aes(x = Date, y = kwh_day))+
-  geom_line(color = "#00AFBB", size = 2)
+plotts.wge(df$Gen_Kwh)
+acf(df$Gen_Kwh,plot=TRUE)
+parzen.wge(df$Gen_Kwh, dbcalc = TRUE, trunc = 0, plot=TRUE)
 
-plotts.wge(df$kwh_day)
-
-Realizaton=gen.arma.wge(df$kwh_day,.95,0,plot=TRUE,sn=0)
-
-acf(Realizaton[1:75],plot=TRUE)
-acf(Realizaton[75:150],plot=TRUE)
-
-acf(Realizaton[1:150],plot=TRUE)
+plotts.sample.wge(df$Gen_Kwh)
